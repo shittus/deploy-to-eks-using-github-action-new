@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: primuslearning
+  name: soliuproject
   labels:
-    app: primuslearning
+    app: soliuproject
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: primuslearning
+      app: soliuproject
   template:
     metadata:
       labels:
-        app: primuslearning
+        app: soliuproject
     spec:
       containers:
-        - name: primuslearning
-          image: 499156924743.dkr.ecr.us-east-2.amazonaws.com/primuslearning:1.1
+        - name: soliuproject
+          image: 499156924743.dkr.ecr.us-east-2.amazonaws.com/soliuproject:1.1
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
