@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: primuslearning
+  name: soliuproject
 spec:
   selector:
-    app: primuslearning
+    app: soliuproject
   ports:
     - protocol: TCP
       port: 80
